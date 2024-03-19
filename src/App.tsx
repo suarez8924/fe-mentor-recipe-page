@@ -1,9 +1,10 @@
-import './App.scss';
+import styles from './App.module.scss';
+import Recipe from './components/recipe/Recipe';
 
 function App() {
   return (
-    <main>
-      <h1>PROJECT</h1>
+    <main className={styles.mainContainer}>
+      <Recipe />
     </main>
   );
 }
