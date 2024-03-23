@@ -19,18 +19,21 @@ const PreparationTime = ({
 
   return (
     <section className={styles.preparationTime}>
-      <h2>Preparation time</h2>
-      <ul>
-        <li>
-          <strong>Total:</strong> {totalDurationString}
-        </li>
-        <li>
-          <strong>Preparation:</strong> {getMinutesString(preparationDuration)}
-        </li>
-        <li>
-          <strong>Cooking:</strong> {getMinutesString(cookingDuration)}
-        </li>
-      </ul>
+      <div className={styles.contentWrapper}>
+        <h2>Preparation time</h2>
+        <ul>
+          <li>
+            <strong>Total:</strong> {totalDurationString}
+          </li>
+          <li>
+            <strong>Preparation:</strong>{' '}
+            {getMinutesString(preparationDuration)}
+          </li>
+          <li>
+            <strong>Cooking:</strong> {getMinutesString(cookingDuration)}
+          </li>
+        </ul>
+      </div>
     </section>
   );
 };
