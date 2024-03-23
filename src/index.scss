@@ -1,3 +1,5 @@
+@use './styles/colors';
+
 :root {
   font-family: 'Outfit', sans-serif;
   font-optical-sizing: auto;
@@ -25,4 +27,6 @@ html {
 
 body {
   font-size: 1.6rem;
+  color: colors.$color-wenge-brown;
+  line-height: 1.5;
 }

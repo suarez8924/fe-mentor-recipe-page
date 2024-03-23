@@ -1,0 +1,11 @@
+@use './media-queries';
+@use './paddings';
+
+@mixin section-spacings($margin-top: 3.2rem) {
+  margin-top: $margin-top;
+  padding: 0 paddings.$mobile-section-side-paddings;
+
+  @media (min-width: media-queries.$media-tablet) {
+    padding: 0 paddings.$desktop-section-side-paddings;
+  }
+}

@@ -5,10 +5,11 @@ import PreparationTime from '../preparation-time/PreparationTime';
 import Ingredients from '../ingredients/Ingredients';
 import Instructions from '../instructions/Instructions';
 import NutritionTable from '../nutrition-table/NutritionTable';
+import styles from './Recipe.module.scss';
 
 const Recipe = () => {
   return (
-    <article>
+    <article className={styles.recipe}>
       <RecipeImage
         src={imageOmelette}
         alt="Photo of an omelette in a plate with salad inside"

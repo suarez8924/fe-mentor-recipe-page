@@ -1,4 +1,5 @@
 @use './styles/colors';
+@use './styles/media-queries';
 
 .mainContainer {
   display: flex;
@@ -7,4 +8,8 @@
   width: 100vw;
   min-height: 100vh;
   background-color: colors.$color-white-coffee;
+
+  @media (min-width: media-queries.$media-tablet) {
+    padding: 10rem;
+  }
 }

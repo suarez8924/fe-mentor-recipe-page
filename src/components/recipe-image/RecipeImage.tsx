@@ -1,3 +1,4 @@
+import styles from './RecipeImage.module.scss';
 interface RecipeImageProps {
   src: string;
   alt?: string;
@@ -5,7 +6,7 @@ interface RecipeImageProps {
 
 const RecipeImage = ({ src, alt = '' }: RecipeImageProps) => {
   return (
-    <picture>
+    <picture className={styles.imageWrapper}>
       <img src={src} alt={alt} />
     </picture>
   );

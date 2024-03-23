@@ -1,3 +1,5 @@
+import styles from './PreparationTime.module.scss';
+
 interface PreparationTimeProps {
   preparationDuration: 5;
   cookingDuration: 5;
@@ -16,7 +18,7 @@ const PreparationTime = ({
   )}`;
 
   return (
-    <section>
+    <section className={styles.preparationTime}>
       <h2>Preparation time</h2>
       <ul>
         <li>

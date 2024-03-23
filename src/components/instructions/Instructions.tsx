@@ -1,10 +1,11 @@
+import styles from './Instructions.module.scss';
 interface InstructionsProps {
   instructions: Array<{ title: string; description: string }>;
 }
 
 const Instructions = ({ instructions }: InstructionsProps) => {
   return (
-    <section>
+    <section className={styles.instructions}>
       <h2>Instructions</h2>
       <ol>
         {instructions.map((instruction, index) => (

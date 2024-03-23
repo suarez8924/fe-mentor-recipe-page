@@ -1,0 +1,15 @@
+@use '../../styles/colors';
+@use '../../styles/media-queries';
+@use '../../styles/paddings';
+
+.recipe {
+  position: relative;
+  max-width: 73.6rem;
+  background-color: colors.$color-white;
+  padding: 0 0 paddings.$bottom-padding;
+
+  @media (min-width: media-queries.$media-tablet) {
+    border-radius: 2.4rem;
+    padding: paddings.$top-padding 0 paddings.$bottom-padding;
+  }
+}
