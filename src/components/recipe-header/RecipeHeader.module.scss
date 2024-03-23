@@ -3,7 +3,8 @@
 @import '../../styles/mixins';
 
 .recipeHeader {
-  @include section-spacings(4rem);
+  @include section-spacings;
+  padding-top: 4rem;
 
   h1 {
     font-family: 'Young Serif', serif;

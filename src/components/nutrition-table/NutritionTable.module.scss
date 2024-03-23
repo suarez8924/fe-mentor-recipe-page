@@ -1,5 +1,51 @@
+@use '../../styles/colors';
 @import '../../styles/mixins';
 
 .nutritionTable {
   @include section-spacings;
+  padding-top: 3.2rem;
+
+  h2 {
+    @include secondary-title;
+  }
+
+  p {
+    margin-bottom: 2.4rem;
+  }
+
+  table {
+    width: 100%;
+    tr {
+      display: flex;
+      gap: 1.6rem;
+      justify-content: space-around;
+      padding: 0 3.2rem;
+
+      &:first-child {
+        padding-bottom: 1.2rem;
+      }
+
+      &:not(:first-child):not(:last-child) {
+        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
+      }
+
+      &:not(:last-child) {
+        border-bottom: 1px solid colors.$color-white-coffee;
+      }
+
+      &:last-child {
+        padding-top: 1.2rem;
+      }
+
+      td {
+        flex: 1;
+
+        &:last-of-type {
+          font-weight: 700;
+          color: colors.$color-nutmeg;
+        }
+      }
+    }
+  }
 }

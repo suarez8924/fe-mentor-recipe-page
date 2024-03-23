@@ -4,6 +4,7 @@
 
 .preparationTime {
   @include section-spacings;
+  padding-top: 3.2rem;
 
   .contentWrapper {
     background-color: colors.$color-rose-white;

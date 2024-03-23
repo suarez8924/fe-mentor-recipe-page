@@ -1,5 +1,59 @@
+@use '../../styles/colors';
+@use '../../styles/media-queries';
 @import '../../styles/mixins';
 
 .instructions {
   @include section-spacings;
+  position: relative;
+  padding-top: 3.2rem;
+  padding-bottom: 3.2rem;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: calc(100% - (2 * 3.2rem));
+    height: 0.1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: colors.$color-white-coffee;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+
+  h2 {
+    @include secondary-title;
+  }
+
+  ol {
+    list-style: decimal;
+
+    li {
+      margin-left: 2.7rem;
+      padding-left: 1.5rem;
+
+      &::marker {
+        color: colors.$color-dark-raspberry;
+        font-weight: 700;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 0.8rem;
+      }
+    }
+  }
+
+  @media (min-width: media-queries.$media-tablet) {
+    &::before,
+    &::after {
+      width: calc(100% - (2 * 4rem));
+    }
+  }
 }
