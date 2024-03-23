@@ -1,4 +1,5 @@
 @use './media-queries';
+@use './colors';
 @use './paddings';
 
 @mixin section-spacings($margin-top: 3.2rem) {
@@ -8,4 +9,25 @@
   @media (min-width: media-queries.$media-tablet) {
     padding: 0 paddings.$desktop-section-side-paddings;
   }
+}
+
+@mixin dot-list-style() {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0.4rem;
+  height: 0.4rem;
+  left: 0.8rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: colors.$color-dark-raspberry;
+  border-radius: 50%;
+}
+
+@mixin secondary-title {
+  font-family: 'Young Serif', serif;
+  font-size: 2.8rem;
+  color: colors.$color-nutmeg;
+  line-height: 1;
+  margin-bottom: 2.4rem;
 }

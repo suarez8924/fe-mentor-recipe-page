@@ -26,16 +26,7 @@
       padding-left: 4rem;
 
       &::before {
-        content: '';
-        position: absolute;
-        display: block;
-        width: 0.4rem;
-        height: 0.4rem;
-        left: 0.8rem;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: colors.$color-dark-raspberry;
-        border-radius: 50%;
+        @include dot-list-style;
       }
 
       &:not(:last-child) {
