@@ -1,45 +1,47 @@
-# React + TypeScript + Vite
+# Frontend Mentor - Recipe page solution
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a solution to the [Recipe page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-Currently, two official plugins are available:
+## Table of contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Frontend Mentor - Recipe page solution](#frontend-mentor---recipe-page-solution)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
+  - [Author](#author)
 
-## Expanding the ESLint configuration
+## Overview
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### The challenge
 
-- Configure the top-level `parserOptions` property like this:
+Recipe component should respond to different screen sizes and have good semantic markup
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-};
-```
+### Screenshot
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+![App Screenshot](/public/app-screenshot.png)
 
-## Fonts
+### Links
 
-.young-serif-regular {
-font-family: "Young Serif", serif;
-font-weight: 400;
-font-style: normal;
-}
+- Solution URL: [Link](https://github.com/suarez8924/fe-mentor-recipe-page)
+- Live Site URL: [Live Site](https://recipe-component.netlify.app)
 
-.outfit-<uniquifier> {
-font-family: "Outfit", sans-serif;
-font-optical-sizing: auto;
-font-weight: <weight>;
-font-style: normal;
-}
+## My process
+
+### Built with
+
+- React
+- JavasScript
+- TypeScript
+- Semantic HTML5 markup
+- SASS
+- Mobile-first workflow
+- Vite
+
+## Author
+
+- Frontend Mentor - [@suarez8924](https://www.frontendmentor.io/profile/suarez8924)
+- GitHub - [@suarez8924](https://github.com/suarez8924)
