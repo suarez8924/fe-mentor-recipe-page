@@ -7,11 +7,15 @@
   overflow: hidden;
 
   img {
+    display: block;
     width: 100%;
   }
 
   @media (min-width: media-queries.$media-tablet) {
-    border-radius: 1.2rem;
     padding: 0 paddings.$desktop-section-side-paddings;
+
+    img {
+      border-radius: 1.2rem;
+    }
   }
 }
